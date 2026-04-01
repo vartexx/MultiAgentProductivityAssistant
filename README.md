@@ -70,3 +70,32 @@ Set optional environment variables to connect to external MCP servers:
 - `NOTES_MCP_URL`
 
 If not set, built-in mock execution is used so the system can run locally.
+
+---
+
+## Hackathon Submission
+
+**Complete submission checklist and links:**
+
+See [SUBMISSION_CHECKLIST.md](SUBMISSION_CHECKLIST.md) for step-by-step instructions.
+
+- 📌 **GitHub Repository**: https://github.com/vartexx/MultiAgentProductivityAssistant
+- 🚀 **Cloud Run Deployment**: [Link after deployment]
+- 📊 **Presentation (3 slides)**: [PRESENTATION.md](PRESENTATION.md) - Ready for Google Slides
+- 🎥 **Demo Video (3 min)**: [DEMO_SCRIPT.md](DEMO_SCRIPT.md) - Script ready for recording
+
+**Deployment Guide**: See [DEPLOYMENT.md](DEPLOYMENT.md)
+
+---
+
+## Testing
+
+Run all tests (7 passing):
+```bash
+python -m pytest -q
+```
+
+Test specific endpoint:
+```bash
+pytest tests/test_api.py::test_execute_workflow -v
+```
